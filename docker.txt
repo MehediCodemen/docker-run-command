@@ -2,7 +2,7 @@ Build First Time : docker-compose up --build -d
 
 Run cms: docker-compose build ofc-cms && docker-compose up -d
 Run hrm: docker-compose build ofc-hrm && docker-compose up -d
-Run usrmgm: docker-compose build ofc-usermgm && docker-compose up -d
+docker compose down && docker compose up --build -d  
 
 Logs :
 docker logs ofc_usermgm -f
